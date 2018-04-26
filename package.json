@@ -1,0 +1,34 @@
+{
+  "name": "gatsby-plugin-root-import",
+  "description": "Gatsby plugin to set Webpack to resolve import root",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Mong-Kuen Sun <mongkuen.sun@gmail.com>",
+  "homepage": "https://github.com/mongkuen/gatsby-plugin-root-import",
+  "bugs": {
+    "url": "https://github.com/mongkuen/gatsby-plugin-root-import/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mongkuen/gatsby-plugin-root-import"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "import",
+    "root"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "dev": "onchange '**/*.js' 'src/**/*.jsx' -- prettier --write {{changed}}",
+    "build": "babel src --out-dir .",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-runtime": "^6.26.0",
+    "onchange": "^3.3.0",
+    "prettier": "^1.12.1"
+  }
+}
