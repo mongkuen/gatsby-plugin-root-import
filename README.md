@@ -67,7 +67,7 @@ This means you can import modules with project's `src` folder as `root`:
 ```javascript
 // importing gatsbyProject/src/yourFolder/YourComponent.js
 
-import YourComponent from 'yourFolder/YourComponent`
+import YourComponent from 'yourFolder/YourComponent'
 ```
 
 ## Gatsby V2
