@@ -11,11 +11,11 @@ Set Webpack to resolve root, allowing you to import modules from an absolute pro
 
 1. Install the `gatsby-plugin-root-import` plugin:
 
-    `npm install --save-dev gatsby-plugin-root-import@2.0.0`
+    `npm install --save-dev gatsby-plugin-root-import`
 
     or
 
-    `yarn add --dev gatsby-plugin-root-import@2.0.0`
+    `yarn add --dev gatsby-plugin-root-import`
 
 
 ### Default Settings

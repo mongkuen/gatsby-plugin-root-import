@@ -1,7 +1,7 @@
 {
   "name": "gatsby-plugin-root-import",
   "description": "Gatsby plugin to set Webpack to resolve import root",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "license": "MIT",
   "author": "Mong-Kuen Sun <mongkuen.sun@gmail.com>",
   "homepage": "https://github.com/mongkuen/gatsby-plugin-root-import",
@@ -34,5 +34,8 @@
     "concurrently": "^3.6.1",
     "onchange": "^3.3.0",
     "prettier": "^1.12.1"
+  },
+  "peerDependencies": {
+    "gatsby": ">=2"
   }
 }
