@@ -17,6 +17,19 @@ Set Webpack to resolve root, allowing you to import modules from an absolute pro
 
     `yarn add --dev gatsby-plugin-root-import`
 
+### Usage
+
+Add into `gatsby-config.js`.
+
+```javascript
+// gatsby-config.js
+
+module.exports = {
+  plugins: [
+    'gatsby-plugin-root-import'
+  ]
+}
+```
 
 ### Default Settings
 Webpack v4 drops `resolve.root` in favor of `resolve.alias` found [here](https://webpack.js.org/configuration/resolve/#resolve-alias).
