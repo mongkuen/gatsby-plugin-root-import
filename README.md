@@ -146,3 +146,28 @@ This means you can import modules with project's `src` folder as `root`:
 
 import YourComponent from 'yourFolder/YourComponent'
 ```
+
+<hr/>
+
+## Use with Jest
+
+To use with Jest for [Unit Testing](https://www.gatsbyjs.org/docs/unit-testing/) add a rule to the `moduleNameMapper` in `jest.config.js` or equivalent:
+
+```json
+moduleNameMapper: {
+  "^~(.*)$": `<rootDir>/src$1`
+}
+```
+
+Where `"~"` is the key name used for the Webpack `alias` or `root` setting specified in the Gatsby configuration, e.g.
+
+```js
+plugins: [{
+  resolve: 'gatsby-plugin-root-import',
+  options: {
+    "~": path.join(__dirname, "src/")
+  }
+}]
+```
+
+See [Configuring Jest to Find Our Files](https://jestjs.io/docs/en/webpack.html#configuring-jest-to-find-our-files) for additional information.
