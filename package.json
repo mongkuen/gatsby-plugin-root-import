@@ -36,6 +36,6 @@
     "prettier": "^1.12.1"
   },
   "peerDependencies": {
-    "gatsby": "^2 || ^3"
+    "gatsby": "^2 || ^3 || ^4.0.0-next"
   }
 }
